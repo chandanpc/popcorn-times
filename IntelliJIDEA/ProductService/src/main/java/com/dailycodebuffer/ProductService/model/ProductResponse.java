@@ -1,0 +1,21 @@
+package com.dailycodebuffer.ProductService.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Component
+public class ProductResponse {
+
+    private String productName;
+    private long productId;
+    private long price;
+    private long quantity;
+
+}
